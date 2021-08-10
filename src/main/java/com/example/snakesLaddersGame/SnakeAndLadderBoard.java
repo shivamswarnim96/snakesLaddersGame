@@ -9,13 +9,13 @@ public class SnakeAndLadderBoard {
     private int size;
     private List<Snake> snakes;
     private List<Ladder> ladders;
-    private Map<String, Integer> playerPieces;
+    private Map<String, Integer> players;
 
     public SnakeAndLadderBoard(int size) {
         this.size = size;
         this.snakes = new ArrayList<>();
         this.ladders = new ArrayList<Ladder>();
-        this.playerPieces = new HashMap<String, Integer>();
+        this.players = new HashMap<String, Integer>();
     }
 
     public int getSize() {
@@ -39,10 +39,10 @@ public class SnakeAndLadderBoard {
     }
 
     public Map<String, Integer> getPlayerPieces() {
-        return playerPieces;
+        return players;
     }
 
-    public void setPlayerPieces(Map<String, Integer> playerPieces) {
-        this.playerPieces = playerPieces;
+    public void setPlayerPieces(Map<String, Integer> players) {
+        this.players = players;
     }
 }
